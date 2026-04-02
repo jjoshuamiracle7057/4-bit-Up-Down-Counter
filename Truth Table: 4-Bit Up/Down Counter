@@ -1,0 +1,8 @@
+Reset (RST),Mode (M),Current State (Q),Next State (Q+),Operation Description
+1,X,Any,0000,Asynchronous Reset: Forces count to zero immediately regardless of Clock or Mode.
+0,1,0000,0001,Incrementing (Up Count): Moves from 0 to 1.
+0,1,0111,1000,Incrementing: Moves from 7 to 8.
+0,1,1111,0000,Overflow: Wraps around from 15 back to 0.
+0,0,1111,1110,Decrementing (Down Count): Moves from 15 down to 14.
+0,0,0001,0000,Decrementing: Moves from 1 down to 0.
+0,0,0000,1111,Underflow: Wraps around from 0 back to 15.
